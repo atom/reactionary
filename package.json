@@ -1,0 +1,39 @@
+{
+  "name": "reactionary",
+  "version": "0.0.0",
+  "description": "React helpers for CoffeeScript.",
+  "main": "./src/reactionary",
+  "scripts": {
+    "prepublish": "grunt clean lint coffee",
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atom/reactionary.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atom/reactionary/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/atom/reactionary/raw/master/LICENSE.md"
+    }
+  ],
+  "dependencies": {
+    "envify": "^1.2.1",
+    "react": "^0.10.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.0",
+    "jasmine-focused": "^1.0.4",
+    "grunt-contrib-coffee": "^0.9.0",
+    "grunt-cli": "^0.1.8",
+    "grunt": "^0.4.1",
+    "grunt-shell": "^0.2.2",
+    "grunt-coffeelint": "^0.0.6",
+    "rimraf": "^2.2.2",
+    "coffee-cache": "^0.2.0",
+    "temp": "^0.6.0"
+  }
+}
