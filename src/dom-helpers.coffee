@@ -13,13 +13,4 @@ tag = (name, args...) ->
     attributes.className = attributes.class
     delete attributes.class
 
-  DOM[name](attributes, args)
-
-flatten = (array) ->
-  flattenedArray = []
-  for element in array
-    if typeof element is 'array'
-      flattenedArray.push(flatten(element))
-    else
-      flattenedArray.push(element)
-  flattenedArray
+  DOM[name](attributes, args...)
