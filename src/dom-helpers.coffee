@@ -1,8 +1,5 @@
 {DOM} = require 'react'
 
-for tagName of DOM
-  do (tagName) -> exports[tagName] = tag.bind(@, tagName)
-
 tag = (name, args...) ->
   if args[0]?.constructor is Object
     attributes = args.shift()
@@ -14,3 +11,6 @@ tag = (name, args...) ->
     delete attributes.class
 
   DOM[name](attributes, args...)
+
+for tagName of DOM
+  do (tagName) -> exports[tagName] = tag.bind(@, tagName)
