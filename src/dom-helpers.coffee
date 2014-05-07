@@ -1,7 +1,7 @@
 {DOM} = require 'react'
 
 for tagName of DOM
-  do (tagName) => exports[tagName] = (args...) -> tag(tagName, args...)
+  do (tagName) -> exports[tagName] = tag.bind(@, tagName)
 
 tag = (name, args...) ->
   if args[0]?.constructor is Object
