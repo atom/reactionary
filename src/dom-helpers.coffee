@@ -6,10 +6,6 @@ tag = (name, args...) ->
   else
     attributes = {}
 
-  if attributes.hasOwnProperty('class')
-    attributes.className = attributes.class
-    delete attributes.class
-
   DOM[name](attributes, args...)
 
 for tagName of DOM
