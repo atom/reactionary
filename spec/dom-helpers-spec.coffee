@@ -3,10 +3,10 @@
 describe "DOM helpers", ->
   it "allows for convenient creation of DOM nodes", ->
     element =
-      div class: "greeting",
-        div class: "header",
+      div className: "greeting",
+        div className: "header",
           h1 "Hello World"
-        div class: "body",
+        div className: "body",
           p "Each and every one of you"
 
     console.log JSON.stringify(element, null, 2)
