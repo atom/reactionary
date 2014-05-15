@@ -1,13 +1,10 @@
+React        = require 'react/addons'
 {div, h1, p} = require '../src/dom-helpers'
 
-TestUtils = null
-element   = null
+element = null
 
 describe "DOM helpers", ->
-
   beforeEach ->
-    TestUtils = require('react/addons').addons.TestUtils
-
     # Create React Component with Reactionary
     element =
       div className: "greeting", key: "fancy-key",
@@ -18,7 +15,7 @@ describe "DOM helpers", ->
 
 
   it "allows for convenient creation of DOM nodes", ->
-    (expect TestUtils.isDOMComponent element).toBe true
+    (expect React.addons.TestUtils.isDOMComponent element).toBe true
 
   it "creates DOM nodes with children", ->
     (expect element.props.children).toBeDefined()
