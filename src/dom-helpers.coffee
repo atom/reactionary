@@ -1,4 +1,4 @@
-{DOM} = require 'react'
+{DOM} = require 'react-atom-fork'
 
 tag = (name, args...) ->
   if args[0]?.constructor is Object

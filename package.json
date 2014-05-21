@@ -1,5 +1,5 @@
 {
-  "name": "reactionary",
+  "name": "reactionary-atom-fork",
   "version": "0.9.0",
   "description": "React helpers for CoffeeScript.",
   "main": "./lib/reactionary",
